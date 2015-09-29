@@ -4,8 +4,14 @@
 	margin-bottom: 10px;
 	h1 {
 		margin: 0;
-		color: $primary-shade-color;
 		padding: 15px 0px 5px 15px;
 	}
-
+	.noDecoration {
+		color: $primary-shade-color;
+		text-decoration: none;
+		
+		&:hover{
+	    text-shadow: 0px 0px 10px #4E4E4E;
+		}
+	}
 }
