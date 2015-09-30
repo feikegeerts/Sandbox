@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Handlebars example</title>
+  
+  <!-- REQUIRE JQUERY AND HANDLEBARS -->
+  <script src="/lib/jquery-2.1.4.min.js"></script>
+  <script src="/lib/handlebars.runtime-v4.0.2.js"></script>
+
+  <!-- LINK CSS -->
+  <link rel="stylesheet" type="text/css" href="/dist/stylesheets/main.css">
+
+</head>
+<body>
+  
+  <div id="topHeader"></div>
+  <script src="/dist/templates/header-template.js"></script>
+  <script src="/src/js/header.js"></script>
+
+  <h1>List of Animals and Sounds</h1>
+  <!-- TEMPLATE HOOK -->
+  <div id="animalList">
+  </div>
+
+  <!-- LOAD PRECOMPILED HANDLEBARS TEMPLATE -->
+  <script src="/dist/templates/animals-template.js"></script>
+ 
+  <!-- RENDER TEMPLATE AFTER EVERYTHING ELSE LOADED -->
+  <script src="/src/js/animals.js"></script>
+
+</body>
+</html>
