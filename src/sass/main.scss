@@ -1,52 +1,26 @@
 //partials
 @import "partials/base";
 @import "partials/headers";
+@import "partials/flex";
 
 body {
 	margin: 0;
 	font-family: $base-font-family;
-  p {
+  background-color: $primary-shade-color;
+
+  p, h1 {
     margin-left: 20px;
     margin-bottom: 5px;
   }
+
 }
 
-
-.flex-container {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-  
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  
-  -webkit-flex-flow: row wrap;
-  justify-content: flex-start;
+.content_wrapper {
+  position: absolute;
+  padding:10px;
+  min-width:300px;
+  left: 15%;
+  width: 70%;
+  height: 100%;
+  background-color: #FFF;
 }
-
-.flex-item {
-  background: $secondary-color;
-  padding: 5px;
-  width: 250px;
-  height: 150px;
-  margin: 10px;
-  line-height: 250px;
-  color: $primary-shade-color;
-  font-weight: bold;
-  font-size: 1.5em;
-  text-align: center;
-  border-radius: 10px;
-  text-decoration: none;
-  transition: height 0.5s, line-height 0.5s;
-  -webkit-transition: height 0.5s, line-height 0.5s;
-
-  &:hover {
-    background: $secondary-highlight-color;
-    line-height:265px;
-    height: 160px;
-  }
-}
-

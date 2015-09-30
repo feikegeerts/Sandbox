@@ -1,17 +1,19 @@
-.page_header {
+.pageHeader_wrapper {
 	background-color: $primary-color;
 	width: 100%;
-	margin-bottom: 10px;
 	h1 {
+		left: 15%;
 		margin: 0;
 		padding: 15px 0px 5px 15px;
 	}
 	.noDecoration {
 		color: $primary-shade-color;
 		text-decoration: none;
-		
-		&:hover{
-	    text-shadow: 0px 0px 10px #4E4E4E;
-		}
 	}
+}
+
+.menuBar {
+	position: relative;
+	left:15%;
+	width:70%;
 }
