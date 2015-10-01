@@ -1,7 +1,7 @@
-$animation-duration: 0.3s;
+$animation-duration: 0.5s;
 
 .flex-container {
-  padding: 0;
+  padding: 0px 0 0 10px;
   margin: 0;
   list-style: none;
   display: -webkit-box;
@@ -11,6 +11,8 @@ $animation-duration: 0.3s;
   display: flex;  
   -webkit-flex-flow: row wrap;
   justify-content: flex-start;
+
+  
 }
 
 .flex-item {
@@ -26,11 +28,11 @@ $animation-duration: 0.3s;
   text-align: center;
   border-radius: 10px;
   text-decoration: none;
-  transition: all $animation-duration linear;
   -webkit-transition: all $animation-duration linear;
   -moz-transition: all $animation-duration linear;
   -o-transition: all $animation-duration linear;
   -ms-transition: all $animation-duration linear;
+  transition: all $animation-duration linear;
 
   .flex-content {
     position: absolute;
