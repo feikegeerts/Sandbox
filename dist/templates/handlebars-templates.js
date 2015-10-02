@@ -16,7 +16,10 @@ templates['animals-template'] = template({"1":function(container,depth0,helpers,
   if (stack1 != null) { buffer += stack1; }
   return buffer + "</ul>";
 },"useData":true});
+templates['footer-template'] = template({"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
+    return "<div class=\"footer_wrapper\">\r\n	<div class=\"content\">\r\n		<p><a href=\"/\">Home</a><p>\r\n		<p>Website by: Feike Geerts</p>\r\n	</div>\r\n</div>";
+},"useData":true});
 templates['header-template'] = template({"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
-    return "<div class=\"pageHeader_wrapper\">\r\n    <div class=\"menuBar\">\r\n    	<h1><a href=\"/index.html\" class=\"noDecoration\">Feike's Sandbox</a></h1>\r\n    </div>\r\n    <!--test-->\r\n</div>\r\n\r\n";
+    return "<div class=\"pageHeader_wrapper\">\r\n    <div class=\"menuBar\">\r\n    	<h1><a href=\"/index.html\" class=\"noDecoration\">Feike's Sandbox</a></h1>\r\n    </div>\r\n</div>\r\n\r\n";
 },"useData":true});
 })();

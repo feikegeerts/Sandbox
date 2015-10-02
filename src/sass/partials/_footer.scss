@@ -1,0 +1,17 @@
+footer {
+  position: relative;
+  left: 15%;
+}
+
+.footer_wrapper {
+	width: 100%;
+	.content {
+		padding: 20px;
+		font-size: 0.8em;
+
+		a {
+	    text-decoration: none;
+  		color: inherit;
+		}
+	}
+}

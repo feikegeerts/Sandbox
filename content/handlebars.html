@@ -4,15 +4,18 @@
   <meta charset="UTF-8">
   <title>Handlebars example</title>
   
-  <!-- REQUIRE JQUERY AND HANDLEBARS -->
+  <!-- require jquery -->
   <script src="/lib/jquery-2.1.4.min.js"></script>
+  <!-- require handlebars -->
   <script src="/lib/handlebars.runtime-v4.0.2.js"></script>
+  <!-- require pre-compiled handlebars templates -->
   <script src="/dist/templates/handlebars-templates.js"></script>
-
-  <!-- LINK CSS -->
+  <!-- link css -->
   <link rel="stylesheet" type="text/css" href="/dist/stylesheets/main.css">
 
+  <!-- top header hook in which the compiled handlebars template is loaded -->
   <div id="topHeader"></div>
+  <!-- javascript that loads compiled template and data to the top header hook -->
   <script src="/src/js/header.js"></script>
 
 </head>
@@ -20,18 +23,17 @@
   <div class="content_wrapper">
 
     <h1>List of Animals and Sounds</h1>
-    <!-- TEMPLATE HOOK -->
-    <div id="animalList">
-    </div>
 
-    <!-- LOAD PRECOMPILED HANDLEBARS TEMPLATE -->
-    <script src="/dist/templates/animals-template.js"></script>
+    <!-- animal template hook -->
+    <div id="animalList"></div>
    
-    <!-- RENDER TEMPLATE AFTER EVERYTHING ELSE LOADED -->
+    <!-- javascript that loads compiled template and data to the animal template hook -->
     <script src="/src/js/animals.js"></script>
     
-
-
   </div>
 </body>
+</body>
+<footer id="footer"></footer>
+<script src="/src/js/footer.js"></script>
+</html>
 </html>
