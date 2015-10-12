@@ -1,8 +1,7 @@
-$animation-duration: 0.5s;
+$animation-duration: 0.3s;
 
 .flex-container {
-  padding: 0 0 0 10px;
-  margin: 0;
+  padding: 15px 0 0 10px;
   list-style: none;
   display: -webkit-box;
   display: -moz-box;
@@ -20,9 +19,10 @@ $animation-duration: 0.5s;
   position: relative;
   color: $primary-font-color;
   padding: 5px;
-  width: 250px;
-  height: 75px;
+  width: 200px;
+  height: 50px;
   margin: 10px;
+  margin-bottom: 90px;
   text-align: center;
   border-radius: 10px;
   text-decoration: none;
@@ -32,17 +32,18 @@ $animation-duration: 0.5s;
   -ms-transition: all $animation-duration linear;
   transition: all $animation-duration linear;
 
+
   .flex-content {
     position: absolute;
-    bottom: 38px;
-    width: 240px;
+    bottom: 25px;
+    width: 190px;
     margin: 5px;
   }
 
   p {
     margin: 0;
     position: absolute;
-    bottom: 40px;
+    bottom: 30px;
   }
 
   h2 {
@@ -52,6 +53,7 @@ $animation-duration: 0.5s;
   }
 
   &:hover {
-    height: 160px;
+    height: 130px;
+    margin-bottom: 10px;
   }
 }
