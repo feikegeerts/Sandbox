@@ -14,10 +14,10 @@
 footer { position: relative; left: 15%; }
 
 /* line 6, ../../src/sass/partials/_footer.scss */
-.footer_wrapper { width: 100%; }
-/* line 8, ../../src/sass/partials/_footer.scss */
+.footer_wrapper { width: 70%; text-align: center; }
+/* line 9, ../../src/sass/partials/_footer.scss */
 .footer_wrapper .content { padding: 20px; font-size: 0.8em; }
-/* line 12, ../../src/sass/partials/_footer.scss */
+/* line 13, ../../src/sass/partials/_footer.scss */
 .footer_wrapper .content a { text-decoration: none; color: inherit; }
 
 /* line 3, ../../src/sass/partials/_flex.scss */
