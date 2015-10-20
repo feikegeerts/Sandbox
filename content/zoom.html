@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Zoom</title>
+
+  <script src="/lib/jquery-2.1.4.min.js"></script>
+  <script src="/lib/handlebars.runtime-v4.0.2.js"></script>
+  <script src="/dist/templates/handlebars-templates.js"></script>
+  <link rel="stylesheet" type="text/css" href="/dist/stylesheets/main.css">
+  <link rel="stylesheet" href="/dist/stylesheets/magnify.css">
+  <script src="/dist/js/jquery.magnify.js"></script>
+
+  <div id="topHeader"></div>
+  <script src="/src/js/header.js"></script>
+
+</head>
+<body>
+  
+  <div class="content_wrapper">
+
+    <div class="description">
+      <h1>Zoom using magnify js</h1>
+      <p>Zoom using the jQuery Magnify Plugin v1.3.0 by Tom Doan</p>
+
+      <img src="/images/Maurice-Lacroix-Mens-Les-Classiques-Silver-Dial-Moon-Phase-Watch-Medium.jpg" data-magnify-src="/images/Maurice-Lacroix-Mens-Les-Classiques-Silver-Dial-Moon-Phase-Watch-Large.jpg"/>
+
+      <img src="/images/dusty-tulle-rose-1960_s-cocktail-dress-small.jpg" data-magnify-src="/images/dusty-tulle-rose-1960_s-cocktail-dress-large.jpg"/>
+
+      <script>
+        $(document).ready(function() {
+          $('img').each(function() {
+            $(this).magnify({
+            speed: 100
+            });
+          });
+        });
+      </script>
+    </div>
+  </div>
+
+</body>
+<footer id="footer"></footer>
+<script src="/src/js/footer.js"></script>
+</html>
