@@ -1,0 +1,42 @@
+
+.shapes_wrapper {
+	margin-left: 50px;
+}
+.img_wrapper {
+	position: relative;
+	padding-top:20px;
+	display: inline-block;
+}
+.product_stamp {
+	color: white;
+	text-align: center;
+	font-family: $header-font-family; 
+	line-height: 2;	
+	font-weight: $regular;
+	height: 30px;
+	width: 105px;
+	top: 270px;
+	position: absolute;
+	background: rgba(215, 87, 34, 0.8);
+
+	&.multi_pack {
+    font-size: 0.75em;
+    line-height: 2.5;
+  	background: rgba(48, 150, 163, 0.8);
+
+		&.product_stamp:after {
+	  	border-left-color: rgba(48, 150, 163, 0.8);
+		}
+	}
+}
+.product_stamp:after {
+  left: 105px;
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 15px solid transparent;
+  border-left: 10px solid rgba(215, 87, 34, 0.8);
+  border-bottom: 15px solid transparent;
+}
+

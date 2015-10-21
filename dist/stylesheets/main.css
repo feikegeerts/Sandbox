@@ -34,10 +34,26 @@ footer { position: relative; left: 15%; }
 /* line 55, ../../src/sass/partials/_flex.scss */
 .flex-item:hover { height: 130px; margin-bottom: 10px; }
 
-/* line 7, ../../src/sass/main.scss */
+/* line 2, ../../src/sass/partials/_shapes.scss */
+.shapes_wrapper { margin-left: 50px; }
+
+/* line 5, ../../src/sass/partials/_shapes.scss */
+.img_wrapper { position: relative; padding-top: 20px; display: inline-block; }
+
+/* line 10, ../../src/sass/partials/_shapes.scss */
+.product_stamp { color: white; text-align: center; font-family: "Montserrat", sans-serif; line-height: 2; font-weight: 400; height: 30px; width: 105px; top: 270px; position: absolute; background: rgba(215, 87, 34, 0.8); }
+/* line 22, ../../src/sass/partials/_shapes.scss */
+.product_stamp.multi_pack { font-size: 0.75em; line-height: 2.5; background: rgba(48, 150, 163, 0.8); }
+/* line 27, ../../src/sass/partials/_shapes.scss */
+.product_stamp.multi_pack.product_stamp:after { border-left-color: rgba(48, 150, 163, 0.8); }
+
+/* line 32, ../../src/sass/partials/_shapes.scss */
+.product_stamp:after { left: 105px; content: ""; position: absolute; width: 0; height: 0; border-top: 15px solid transparent; border-left: 10px solid rgba(215, 87, 34, 0.8); border-bottom: 15px solid transparent; }
+
+/* line 8, ../../src/sass/main.scss */
 body { margin: 0; color: #5C5C5C; font-family: "Raleway", sans-serif; font-size: 1em; font-weight: 400; line-height: 1.4; background-color: #F5F5F5; }
-/* line 16, ../../src/sass/main.scss */
+/* line 17, ../../src/sass/main.scss */
 body p, body h1, body h2 { margin-left: 20px; margin-bottom: 5px; }
 
-/* line 22, ../../src/sass/main.scss */
+/* line 23, ../../src/sass/main.scss */
 .content_wrapper { position: relative; padding: 10px; min-width: 300px; min-height: 300px; left: 15%; width: 70%; height: 100%; background-color: #FFF; }
