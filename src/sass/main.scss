@@ -30,3 +30,18 @@ body {
   height: 100%;
   background-color: #FFF;
 }
+
+@media only screen and (max-width: 500px) {
+  body {
+    p, h1, h2 {
+      margin:20px;
+    }
+    h1 {
+      font-size: 1.5em;
+    }
+  }
+  .content_wrapper {
+    left:0;
+    width:100%;
+  }
+}

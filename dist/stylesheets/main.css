@@ -10,6 +10,10 @@
 /* line 18, ../../src/sass/partials/_headers.scss */
 .menuBar { position: relative; left: 15%; width: 70%; }
 
+@media only screen and (max-width: 500px) { /* line 26, ../../src/sass/partials/_headers.scss */
+  .pageHeader_wrapper h1 { left: 0; }
+  /* line 30, ../../src/sass/partials/_headers.scss */
+  .menuBar { left: 0; } }
 /* line 1, ../../src/sass/partials/_footer.scss */
 footer { position: relative; left: 15%; }
 
@@ -63,3 +67,10 @@ body p, body h1, body h2 { margin-left: 20px; margin-bottom: 5px; }
 
 /* line 23, ../../src/sass/main.scss */
 .content_wrapper { position: relative; padding: 10px; min-width: 300px; min-height: 300px; left: 15%; width: 70%; height: 100%; background-color: #FFF; }
+
+@media only screen and (max-width: 500px) { /* line 36, ../../src/sass/main.scss */
+  body p, body h1, body h2 { margin: 20px; }
+  /* line 39, ../../src/sass/main.scss */
+  body h1 { font-size: 1.5em; }
+  /* line 43, ../../src/sass/main.scss */
+  .content_wrapper { left: 0; width: 100%; } }
