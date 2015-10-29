@@ -1,6 +1,10 @@
 
 .shapes_wrapper {
 	margin-left: 50px;
+	h2 {
+		padding-top: 50px;
+		padding-bottom: 10px;
+	}
 }
 .img_wrapper {
 	position: relative;
@@ -64,4 +68,38 @@
      -ms-transform: rotate(45deg);
       -o-transform: rotate(45deg);
 }
+.add_to_wislist__button {
+	height: 40px;
+	width: 65px;
+	border: 1px solid gray;
+	border-radius: 4px;
 
+	&:hover .heart {
+		color: red;
+	}
+
+	&:hover {
+		cursor: pointer;
+	}
+}
+.heart {
+	position: relative;
+	color: gray;
+	font-size: 2em;
+	padding-left:10px;
+	left: 0px;
+ 	transition: left 0.5s  cubic-bezier(0.175, 0.885, 0.320, 1.275);
+	&.added {
+		left:-25px;
+		color: red;
+	}
+	&:hover {
+			will-change: left;
+	}
+}
+.plus {
+	padding-left:10px;
+	position: relative;
+	color: gray;
+	font-size: 2em;
+}

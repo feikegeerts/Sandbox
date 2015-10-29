@@ -40,25 +40,44 @@ footer { position: relative; left: 15%; }
 
 /* line 2, ../../src/sass/partials/_shapes.scss */
 .shapes_wrapper { margin-left: 50px; }
+/* line 4, ../../src/sass/partials/_shapes.scss */
+.shapes_wrapper h2 { padding-top: 50px; padding-bottom: 10px; }
 
-/* line 5, ../../src/sass/partials/_shapes.scss */
+/* line 9, ../../src/sass/partials/_shapes.scss */
 .img_wrapper { position: relative; padding-top: 20px; display: inline-block; }
 
-/* line 10, ../../src/sass/partials/_shapes.scss */
+/* line 14, ../../src/sass/partials/_shapes.scss */
 .product_stamp { color: white; text-align: center; font-family: "Montserrat", sans-serif; line-height: 2; font-weight: 400; height: 30px; width: 105px; top: 270px; position: absolute; background: rgba(215, 87, 34, 0.8); }
-/* line 22, ../../src/sass/partials/_shapes.scss */
+/* line 26, ../../src/sass/partials/_shapes.scss */
 .product_stamp.multi_pack { font-size: 0.75em; line-height: 2.5; background: rgba(48, 150, 163, 0.8); }
-/* line 27, ../../src/sass/partials/_shapes.scss */
+/* line 31, ../../src/sass/partials/_shapes.scss */
 .product_stamp.multi_pack.product_stamp:after { border-left-color: rgba(48, 150, 163, 0.8); }
 
-/* line 32, ../../src/sass/partials/_shapes.scss */
+/* line 36, ../../src/sass/partials/_shapes.scss */
 .product_stamp:after { left: 105px; content: ""; position: absolute; width: 0; height: 0; border-top: 15px solid transparent; border-left: 10px solid rgba(215, 87, 34, 0.8); border-bottom: 15px solid transparent; }
 
-/* line 42, ../../src/sass/partials/_shapes.scss */
+/* line 46, ../../src/sass/partials/_shapes.scss */
 .zoom_icon { font-size: 8em; /* This controls the size. */ display: inline-block; width: 0.4em; height: 0.4em; border: 0.1em solid black; position: relative; border-radius: 0.35em; }
 
-/* line 51, ../../src/sass/partials/_shapes.scss */
+/* line 55, ../../src/sass/partials/_shapes.scss */
 .zoom_icon:before { content: ""; display: inline-block; position: absolute; right: -0.25em; bottom: -0.1em; border-width: 0; background: black; width: 0.35em; height: 0.08em; -webkit-transform: rotate(45deg); -moz-transform: rotate(45deg); -ms-transform: rotate(45deg); -o-transform: rotate(45deg); }
+
+/* line 71, ../../src/sass/partials/_shapes.scss */
+.add_to_wislist__button { height: 40px; width: 65px; border: 1px solid gray; border-radius: 4px; }
+/* line 77, ../../src/sass/partials/_shapes.scss */
+.add_to_wislist__button:hover .heart { color: red; }
+/* line 81, ../../src/sass/partials/_shapes.scss */
+.add_to_wislist__button:hover { cursor: pointer; }
+
+/* line 85, ../../src/sass/partials/_shapes.scss */
+.heart { position: relative; color: gray; font-size: 2em; padding-left: 10px; left: 0px; transition: left 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
+/* line 92, ../../src/sass/partials/_shapes.scss */
+.heart.added { left: -25px; color: red; }
+/* line 96, ../../src/sass/partials/_shapes.scss */
+.heart:hover { will-change: left; }
+
+/* line 100, ../../src/sass/partials/_shapes.scss */
+.plus { padding-left: 10px; position: relative; color: gray; font-size: 2em; }
 
 /* line 8, ../../src/sass/main.scss */
 body { margin: 0; color: #5C5C5C; font-family: "Raleway", sans-serif; font-size: 1em; font-weight: 400; line-height: 1.4; background-color: #F5F5F5; }
