@@ -63,21 +63,30 @@ footer { position: relative; left: 15%; }
 .zoom_icon:before { content: ""; display: inline-block; position: absolute; right: -0.25em; bottom: -0.1em; border-width: 0; background: black; width: 0.35em; height: 0.08em; -webkit-transform: rotate(45deg); -moz-transform: rotate(45deg); -ms-transform: rotate(45deg); -o-transform: rotate(45deg); }
 
 /* line 71, ../../src/sass/partials/_shapes.scss */
-.add_to_wislist__button { height: 40px; width: 65px; border: 1px solid gray; border-radius: 4px; }
-/* line 77, ../../src/sass/partials/_shapes.scss */
+.add_to_wislist__button { height: 35px; width: 60px; border: 1px solid gray; border-radius: 4px; position: relative; color: gray; }
+/* line 79, ../../src/sass/partials/_shapes.scss */
 .add_to_wislist__button:hover .heart { color: red; }
-/* line 81, ../../src/sass/partials/_shapes.scss */
+/* line 83, ../../src/sass/partials/_shapes.scss */
 .add_to_wislist__button:hover { cursor: pointer; }
 
-/* line 85, ../../src/sass/partials/_shapes.scss */
-.heart { position: relative; color: gray; font-size: 2em; padding-left: 10px; left: 0px; transition: left 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
-/* line 92, ../../src/sass/partials/_shapes.scss */
-.heart.added { left: -25px; color: red; }
-/* line 96, ../../src/sass/partials/_shapes.scss */
-.heart:hover { will-change: left; }
-
+/* line 87, ../../src/sass/partials/_shapes.scss */
+.heart { position: relative; color: gray; font-size: 2em; padding-left: 8px; top: -4px; line-height: 1.4; left: 0px; transition: left 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275), color 0.2s, font-size 0.1s, line-height 0.1s; }
 /* line 100, ../../src/sass/partials/_shapes.scss */
-.plus { padding-left: 10px; position: relative; color: gray; font-size: 2em; }
+.heart.added { left: -23px; color: red; }
+/* line 104, ../../src/sass/partials/_shapes.scss */
+.heart:hover { will-change: left; }
+/* line 107, ../../src/sass/partials/_shapes.scss */
+.heart.twist { font-size: 2.2em; line-height: 1; }
+
+/* line 112, ../../src/sass/partials/_shapes.scss */
+.plus { padding-left: 10px; font-size: 2em; position: relative; top: -2px; opacity: 0; transition: opacity 0.5s; }
+/* line 119, ../../src/sass/partials/_shapes.scss */
+.plus.on { opacity: 1; }
+
+/* line 123, ../../src/sass/partials/_shapes.scss */
+.tick { position: relative; top: -8px; left: -16px; z-index: 0; opacity: 0; transition: opacity 0.5s; }
+/* line 130, ../../src/sass/partials/_shapes.scss */
+.tick.on { opacity: 1; }
 
 /* line 8, ../../src/sass/main.scss */
 body { margin: 0; color: #5C5C5C; font-family: "Raleway", sans-serif; font-size: 1em; font-weight: 400; line-height: 1.4; background-color: #F5F5F5; }
