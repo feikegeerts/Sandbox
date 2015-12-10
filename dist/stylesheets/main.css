@@ -93,12 +93,19 @@ body { margin: 0; color: #5C5C5C; font-family: "Raleway", sans-serif; font-size:
 /* line 17, ../../src/sass/main.scss */
 body p, body h1, body h2 { margin-left: 20px; margin-bottom: 5px; }
 
-/* line 23, ../../src/sass/main.scss */
+/* line 22, ../../src/sass/main.scss */
+.front-page { text-align: center; }
+/* line 25, ../../src/sass/main.scss */
+.front-page__gears { padding-top: 1em; }
+/* line 29, ../../src/sass/main.scss */
+.front-page__title { font-size: 1.5em; padding-top: 1em; }
+
+/* line 34, ../../src/sass/main.scss */
 .content_wrapper { position: relative; padding: 10px; min-width: 300px; min-height: 300px; left: 15%; width: 70%; height: 100%; background-color: #FFF; }
 
-@media only screen and (max-width: 500px) { /* line 36, ../../src/sass/main.scss */
+@media only screen and (max-width: 500px) { /* line 47, ../../src/sass/main.scss */
   body p, body h1, body h2 { margin: 20px; }
-  /* line 39, ../../src/sass/main.scss */
+  /* line 50, ../../src/sass/main.scss */
   body h1 { font-size: 1.5em; }
-  /* line 43, ../../src/sass/main.scss */
+  /* line 54, ../../src/sass/main.scss */
   .content_wrapper { left: 0; width: 100%; } }
